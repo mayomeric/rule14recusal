@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
-    
+    <div class="jumbotron">
     <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>RULE 14 RECUSALS</title>
-        <meta name="description" content="An interactive getting started guide for Brackets.">
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
         
+        <div class="header">
         <h1>RULE 14 RECUSALS</h1>
-        <h3>Your guide to what your alderman won't vote on</h3>
+        </div>  
         
-        <!--
-            MADE WITH <3 AND JAVASCRIPT
-        -->
+        <h3>Your guide to what your alderman won't vote on...</h3>
         
+        
+    <div class = "text">
         <p>
-            Alderman in Chicago can recuse themselves from a vote under two different sections of law. The first requires any alderman who has any financial interest that is different than the general public or who expects to earn compensation from a party involved in legislation within the past year or in the future 12 month, must tell the Board of Ethics about such conflict, and it is posted on their <a href="https://www.chicago.gov/city/en/depts/ethics/provdrs/reg/svcs/alderrecusals.html">website</a>.
+            Alderman in Chicago can recuse themselves from a vote under two different sections of law. The first requires any alderman who has any financial interest that is different than the general public or who expects to earn compensation from a party involved in legislation within the past year or in the future 12 months, must tell the Board of Ethics about such conflict, and it is posted on their <a href="https://www.chicago.gov/city/en/depts/ethics/provdrs/reg/svcs/alderrecusals.html">website</a>.
         </p>
         
-        <!--
-            WHAT IS BRACKETS?
-        -->
+        
         <p>
            The second area is Rule 14 of the City Council, which requires disclosure of other potential conflicts of interest in addition to the ones described above. However, unlike those recusals, these recusals are only recorded in the City Clerk's Journal of Proceedings, and only accessible to those who are looking for them. 
         </p>
@@ -31,13 +31,50 @@
      
         <p>
             For the first time, we have gathered all of the Rule 14 Recusals since 2018 in one database. Explore which alderman are recusing themselves, on what bills they are recusing themselves, and the subjects of those bills.
+        </p>
+    </div>
+            
+   
+            
+        <div class = 'buttons'>
+
+          <div id="date_recusal">
+              <input name="Recusals by Date"
+               type="button"
+               value="Recusals by Date"
+                id="date_recusal"
+                onclick="window.location.href = 'recusals_by_date.html';"
+                />
+         </div>
+
+          <div id="reason_recusal">
+              <input name="Recusals by Reason"
+               type="button"
+               value="Recusals by Stated Reason"
+                id="reason_recusal"
+                onclick="window.location.href = 'recusals_by_reason.html';"
+                />
+         </div>
         
-        <ul>
-            <li><a href="recusals_by_date.html">Recusals by Date</a></li>
-            <li><a href="recusals_by_reason.html">Recusals by Stated Reason</a></li>
-            <li><a href="recusals_by_subject.html">Recusals by Bill Subject</a></li>
-            <li><a href="data_table.html">View the Full Dataset</a></li>
-        </ul>
+            <div id="subject_recusal">
+              <input name="Recusals by Bill Subject"
+               type="button"
+               value="Recusals by Bill Subject"
+                id="subject_recusal"
+                onclick="window.location.href = 'recusals_by_subject.html';"
+                />
+         </div>
+            
+                      <div id="full_data">
+              <input name="View the Full Dataset"
+               type="button"
+               value="Full Dataset"
+                id="full_data"
+                onclick="window.location.href = 'data_table.html';"
+                />
+         </div>
+                  
         
     </body>
+    </div>    
 </html>
